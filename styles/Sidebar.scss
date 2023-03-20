@@ -1,0 +1,44 @@
+.sidebar {
+  position: sticky;
+  top: 10vh;
+  height: 90vh;
+  flex: 3;
+  .sidebar-item {
+    margin-bottom: 20px;
+    .title {
+      text-transform: capitalize;
+      font-size: 20px;
+      padding: 20px 0;
+    }
+    .items {
+      .item {
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        transition: 1s ease;
+        cursor: pointer;
+        &.active {
+          transform: scale(1.03);
+          .circle {
+            border-color: $main_color;
+          }
+        }
+        .circle {
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          border: 2px solid;
+          transition: 0.3s ease;
+        }
+        &:hover {
+          .circle {
+            border-color: $main_color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./Vars.scss";
+@import "./Navbar.scss";
+@import "./Breadcrumb.scss";
+@import "./Products.scss";
+@import "./Sidebar.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+// scroll bar
+
+::-webkit-scrollbar {
+  width: 4px;
+  transition: $main_transition;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  transition: $main_transition;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main_color;
+  transition: $main_transition;
+  border-radius: 30%;
+  &:hover {
+    background-color: darken($main_color, 6%);
+  }
+}
+// general updates
+li {
+  list-style: none;
+}
+
+.shop-area {
+  .container {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,15 @@
+.breadcrumb-area {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $light_color;
+  .container {
+    .breadcrumb {
+      text-align: center;
+      width: 100%;
+      text-transform: capitalize;
+      span {
+        margin: 0 10px;
+      }
+    }
+  }
+}
