@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "../copy.js";
 import Image from "next/image";
+import img_1 from "../public/Images/img.jpg";
 import { Rate } from "antd";
 function Products() {
   const [products, setProducts] = useState(data);
@@ -19,7 +20,8 @@ function Products() {
         <div key={product.id} className="product">
           <div className="top">
             <Image
-              src={product?.images[0]?.url}
+              src={img_1}
+              // src={product?.images[0]?.url}
               fill={true}
               alt="product image"
             />

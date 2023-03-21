@@ -12,9 +12,6 @@
       border-color: $light_color;
       box-shadow: $light_shadow;
       .top {
-        .difficulty {
-          border-bottom: 1px solid;
-        }
         img {
           transform: scale(1.2);
         }
@@ -35,8 +32,8 @@
       transition: 0.5s ease;
 
       img {
-        object-fit: contain;
-        width: 150px !important;
+        object-fit: cover;
+        width: 100% !important;
         margin: auto;
         transition: 0.5s ease;
       }
